@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vánoční přání</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="app">
+	<!-- ↑↑↑ tenhle div do Reactu nedávej, až to pod ním-->
+
+
+
+		<!--
+			Tenhle div představuje pozadí celé stránky za přáníčkem.
+			Můžeš na něj přidat jednu z následujících tříd pro varianty pozadí:
+			.background--red, .background--green, .background--blue, .background--gold
+			.background--tree, .background--decorations, .background--snow
+
+			Takže třeba zlaté pozadí bude:
+			<div class="background background--gold">
+		 -->
+		<div class="background">
+
+			<div class="snow">
+				<!--
+					Pokud chceš, tak sem vložíš sníh, který bude padat na pozadí.
+
+					Nainstaluj si do projektu tuhle knihovnu:
+					https://www.npmjs.com/package/react-snowfall
+					A pak vlož a nastav komponentu podle dokumentace.
+
+					Pravděpodobně to bude vypadat nějak takhle:
+					<Snowfall snowflakeCount={200} />
+				-->
+			</div>
+
+
+			<!--
+				Na tenhle div půjde kliknout, což by mělo otevřít/zavřít přáníčko.
+
+				Stačí na něj po kliknutí přidat třídu .card--open a přáníčko se otevře.
+				Když ji odebereš, tak se zase zavře.
+
+				Přidáním jedné z následujících tříd nastavíš barvu pozadí obálky
+				a také levé strany uvnitř přáníčka.
+				.card--red, .card--green, .card--blue, .card--gold
+
+				Takže třeba otevřená modrá kartička bude:
+				<div class="card card--blue card--open">
+			 -->
+			<div class="card">
+
+				<!--
+					Vnější obálka
+					Nastav do src obrázku správné SVG tvojí vybrané obálky.
+				-->
+				<div class="cover">
+					<img class="cover__image" src="images/covers/gifts.svg">
+				</div>
+
+				<!--
+					Levá vnitřní strana
+					Sem doplníš text přáníčka a podpis.
+				-->
+				<div class="inside-left">
+					<div class="inside-left__content">
+						<div class="inside-left__text">Šťastné a veselé Vánoce!</div>
+						<div class="inside-left__sender">Luděk</div>
+					</div>
+					<img class="inside-left__logo" src="images/czechitas.svg" alt="Czechitas">
+				</div>
+
+				<!--
+					Pravá vnitřní strana
+					Fotky jsou v projektu zadané napevno. Klidně si je vyměň za svoje,
+					ale zachovej jejich velikost a poměr stran. CSS není na jinou variantu
+					připravené a přání by mohlo vypadat divně.
+				-->
+				<div class="inside-right">
+					<div class="photo photo1"><img src="images/photos/photo1.jpg"></div>
+					<div class="photo photo2"><img src="images/photos/photo2.jpg"></div>
+					<div class="photo photo3"><img src="images/photos/photo3.jpg"></div>
+					<div class="photo photo4"><img src="images/photos/photo4.jpg"></div>
+				</div>
+
+			</div><!-- konec .card -->
+
+			<p class="instructions">Kliknutím mě otevři</p>
+
+		</div><!-- konec .background -->
+
+
+
+
+	<!-- ↓↓↓ tohle už do Reactu nedávej -->
+	</div>
+
+</body>
+</html>
