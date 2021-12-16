@@ -1,0 +1,1 @@
+# vanocni-prani-configurator
