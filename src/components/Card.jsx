@@ -53,16 +53,16 @@ const Card = () => {
 
           <div className="inside-right">
             <div className="photo photo1">
-              <img src="../assets/images/photos/ludek7.jpg" />
+              <img src="../assets/images/photos/photo1.jpg" />
             </div>
             <div className="photo photo2">
-              <img src="../assets/images/photos/ludek5.jpg" />
+              <img src="../assets/images/photos/photo2.jpg" />
             </div>
             <div className="photo photo3">
-              <img src="../assets/images/photos/ludek1.jpg" />
+              <img src="../assets/images/photos/photo3.jpg" />
             </div>
             <div className="photo photo4">
-              <img src="../assets/images/photos/ludek4.jpg" />
+              <img src="../assets/images/photos/photo4.jpg" />
             </div>
           </div>
         </div>

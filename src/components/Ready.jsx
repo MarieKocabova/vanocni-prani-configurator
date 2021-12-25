@@ -4,7 +4,7 @@ import Header from "./Header";
 import Title from "./Title";
 import { Link } from "react-router-dom";
 
-const Ready = ({ dataFromServer }) => {
+const Ready = ({ dataFromServer, setCreating }) => {
   return (
     <>
       <Header />
@@ -33,7 +33,14 @@ const Ready = ({ dataFromServer }) => {
           </div>
 
           <Link to="/vytvor-prani">
-            <button className="button button--big">Vytvořit další přáníčko</button>
+            <button
+              onClick={() => {
+                setCreating(true);
+              }}
+              className="button button--big"
+            >
+              Vytvořit další přáníčko
+            </button>
           </Link>
         </div>
       </main>
